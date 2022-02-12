@@ -1,3 +1,4 @@
+//cata Well of Ideas - Easy Version
 function well(x){
   
 switch (x.filter(i => i === 'good').length) {
@@ -8,5 +9,16 @@ switch (x.filter(i => i === 'good').length) {
       return 'Publish!'
     default:
       return 'I smell a series!'
+  }
+}
+
+//cata Area or Perimeter
+const areaOrPerimeter = function(l , w) {
+  // Return your answer
+  if (l === w) {
+    return l * w
+  }
+  else {
+    return 2 * (l + w)
   }
 }
