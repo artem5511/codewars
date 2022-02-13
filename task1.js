@@ -28,3 +28,10 @@ const areaOrPerimeter = function(l , w) {
  //You got this!
   return str.slice(1, -1)
 };
+
+// Exclamation marks series #1: Remove an exclamation mark from the end of string
+function remove (string) {
+  //coding and coding....
+  return string[string.length-1] == '!' ? string.slice(0, string.length-1) : string;
+  //return string.replace (/$!/,'');  не сработало это решение
+}
