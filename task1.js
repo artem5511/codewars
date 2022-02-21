@@ -36,4 +36,8 @@ function remove (string) {
   //return string.replace (/$!/,'');  не сработало это решение
 }
 
-//
+// We need a function that can transform a number into a string.
+//What ways of achieving this do you know?
+function numberToString(num) {
+  return num.toString();
+}
