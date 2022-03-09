@@ -41,3 +41,12 @@ function remove (string) {
 function numberToString(num) {
   return num.toString();
 }
+
+// Filter out the geese
+unction gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  
+  return birds.filter((elm) => !geese.includes(elm))
+  
+  // return an array containing all of the strings in the input array except those that match strings in geese
+};
