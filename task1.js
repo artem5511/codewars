@@ -50,3 +50,8 @@ unction gooseFilter (birds) {
   
   // return an array containing all of the strings in the input array except those that match strings in geese
 };
+
+// Sentence Smash
+function smash (words) {
+  return words.join(' ')
+};
