@@ -110,3 +110,11 @@ function mergeArrays(arr1, arr2) {
   }
   return result;
 }
+
+//Gravity Flip
+const flip=(d, a)=>{
+  if (d === 'R') {
+    return a.sort((a, b) => a -b);
+      }
+  return a.sort((a, b) => b - a);
+}
