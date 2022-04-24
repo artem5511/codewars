@@ -119,3 +119,34 @@
 //   return a.sort((a, b) => b - a);
 // }
 
+// Sum of positive
+
+//  решение
+function positiveSum(arr) {
+    const reducer = (accumulator, current) => accumulator + (current > 0 ? current : 0)
+    return arr.reduce(reducer, 0)
+}
+
+// мое решение, работает, кодварс не пропустил
+let arr=[1,-4,7,12]
+
+const filteredArray = arr.filter(
+    function checkNumber(currentValue) {
+        return currentValue > 0;
+    }
+);
+console.log(filteredArray)
+
+arr = filteredArray;
+console.log(arr)
+
+const initialValue =0;
+const sumWithInitial = arr.reduce(
+    (previosValue, currentValue) => previosValue + currentValue,
+    initialValue);
+console.log(sumWithInitial)
+
+
+//  ??  не работает   почему   function positiveSum(array1) {
+//     return array1.filter(i=>i>0).map(i=>x+=i, x=0).reverse()[0]
+//     console.log(positiveSum)
