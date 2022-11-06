@@ -20,3 +20,28 @@
 //     while (n-- > 0) new_s+= s;
 //     return new_s;
 // }
+
+//Opposite number   найти противоположное число
+// function opposite(number) {
+//     //your code here
+//     return -number
+// }
+//
+// function opposite(number) {
+//     //your code here
+//     let oppNum = 0 - number
+//     return oppNum;
+// }
+
+//Square(n) Sum  возвести в квадрат и суммировать  числа в массиве
+function squareSum(numbers){
+    return numbers.reduce( (acc, cur) => acc + (cur **2), 0)
+}
+
+function squareSum(numbers) {
+    let sum = 0
+    numbers.forEach( number => {
+        sum += (number * number)
+    })
+    return sum
+}
