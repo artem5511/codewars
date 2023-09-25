@@ -53,3 +53,11 @@ function invert(array) {
    const newArray = array.map(el => el*-1)
    return newArray;
 }
+
+Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+function digitize(n) {
+ let newArray = [...n.toString()].reverse()
+  return newArray.map(el=> Number(el)) //code here
+}
