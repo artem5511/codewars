@@ -45,3 +45,11 @@ function squareSum(numbers) {
     })
     return sum
 }
+
+8 kyu
+Invert values
+
+function invert(array) {
+   const newArray = array.map(el => el*-1)
+   return newArray;
+}
