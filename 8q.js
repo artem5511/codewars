@@ -61,3 +61,11 @@ function digitize(n) {
  let newArray = [...n.toString()].reverse()
   return newArray.map(el=> Number(el)) //code here
 }
+
+Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.reduce((acc,el)=>acc < el ? acc : el)
+  }
+}
