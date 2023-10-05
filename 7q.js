@@ -15,3 +15,16 @@ function countSheeps(sheep) {
    let count = sheep.filter(Boolean).length
    return count
   }
+
+7 kyu
+Descending Order
+function descendingOrder(n){
+// const arr = Array.from(String(n), Number)
+// const arr2 = arr.sort(function(a, b) {
+//      return b-a})     
+//   const arr3 =  arr2.join('');
+//   return arr3
+  
+   let nToStr = n.toString().split('').sort((a,b)=>a-b).reverse().join('')
+  return Number(nToStr)
+}
