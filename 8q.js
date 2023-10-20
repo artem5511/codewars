@@ -97,4 +97,10 @@ function hero(bullets, dragons){
      return false
 //Get Coding!
 }
+    вариант 2
+function hero(bullets, dragons){
+  return bullets >= dragons * 2
+}
+вариант стрелочная 
+const hero = (bullets, dragons) => dragons * 2 <= bullets;
 
