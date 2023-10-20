@@ -90,7 +90,7 @@ function greet() {
 
 Is he gonna survive?
 function hero(bullets, dragons){
-   if ((bullets/dragons) >= 2) {
+   if ((bullets/dragons) >= 2 || 0) {
          return true
    }
    else 
