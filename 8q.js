@@ -104,3 +104,23 @@ function hero(bullets, dragons){
 вариант стрелочная 
 const hero = (bullets, dragons) => dragons * 2 <= bullets;
 
+Printer Errors
+function printerError(s) {
+    err = s.match(/[n-z]/g).length
+    return (err + '/'+ s.length)
+}
+Printer Errors
+function printerError(s) {
+  let count = 0;
+  for (let i = 0; i <s.length; i++) { 
+    if (s[i] > 'm') { 
+      count++; 
+    } 
+  } 
+  return count + '/' + s.length; 
+}
+function printerError(s) {
+    const init_len = s.length;
+    const err_len = s.replace(/[a-m]/g, "").length;
+     return (err_len + '/'+  init_len)
+}
