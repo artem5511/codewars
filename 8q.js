@@ -86,3 +86,15 @@ const greet = () => "hello world!";
 function greet() {
     return "hello world!";
     }
+
+
+Is he gonna survive?
+function hero(bullets, dragons){
+   if ((bullets/dragons) >= 2) {
+         return true
+   }
+   else 
+     return false
+//Get Coding!
+}
+
