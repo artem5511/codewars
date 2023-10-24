@@ -124,3 +124,20 @@ function printerError(s) {
     const err_len = s.replace(/[a-m]/g, "").length;
      return (err_len + '/'+  init_len)
 }
+
+
+Difference of Volumes of Cuboids
+
+function findDifference(a, b) {
+  num1 = (a[0]*a[1])*a[2];
+   num2 = (b[0]*b[1])*b[2];
+  return Math.abs(num1-num2)
+  //loading...
+}
+не мои
+function find_difference(a, b) {
+  return Math.abs(a[0]*a[1]*a[2]-b[0]*b[1]*b[2]);
+}
+function find_difference(a, b) {
+  return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
+}
