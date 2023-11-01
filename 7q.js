@@ -28,3 +28,5 @@ function descendingOrder(n){
    let nToStr = n.toString().split('').sort((a,b)=>a-b).reverse().join('')
   return Number(nToStr)
 }
+
+To square(root) or not to square(root)
