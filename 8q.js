@@ -153,3 +153,9 @@ function squareOrSquareRoot(array) {
     return Number.isInteger(n) ? n : x * x
   })
 }
+
+Returning Strings
+
+function greet(name){
+  return "Hello, " + `${name}` + " how are you doing today?"
+ }
